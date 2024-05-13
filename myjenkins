@@ -26,7 +26,7 @@ pipeline {
           }
         }
     }
-      stage ('DEPLOY')
+      stage ('DEPLOY') {
         parallel {
         steps {
           echo 'This is deploy stage'
@@ -35,3 +35,4 @@ pipeline {
       }
     }
   }
+}
